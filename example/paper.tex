@@ -1,0 +1,57 @@
+\input{preamble}
+
+\begin{document}
+  \vspace*{0.2in}
+  \begin{flushleft}
+    \input{head/title}
+    \input{head/authors}
+  \end{flushleft}
+  \input{head/abstract}
+
+  \linenumbers
+
+  \input{sections/introduction}
+  \input{sections/materials}
+  \input{sections/results}
+  \input{sections/discussion}
+  \input{sections/conclusion}
+  \input{sections/supporting-information}
+  \input{sections/acknowledgments}
+
+  \nolinenumbers
+
+  % Either type in your references using
+  % \begin{thebibliography}{}
+  % \bibitem{}
+  % Text
+  % \end{thebibliography}
+  %
+  % or
+  %
+  % Compile your BiBTeX database using our plos2015.bst
+  % style file and paste the contents of your .bbl file
+  % here. See http://journals.plos.org/plosone/s/latex for
+  % step-by-step instructions.
+  % \bibliography{references}
+
+  \begin{thebibliography}{10}
+    \bibitem{bib1}
+    Conant GC, Wolfe KH.
+    \newblock {{T}urning a hobby into a job: how duplicated genes find new
+      functions}.
+    \newblock Nat Rev Genet. 2008 Dec;9(12):938--950.
+
+    \bibitem{bib2}
+    Ohno S.
+    \newblock Evolution by gene duplication.
+    \newblock London: George Alien \& Unwin Ltd. Berlin, Heidelberg and New York:
+      Springer-Verlag.; 1970.
+
+    \bibitem{bib3}
+    Magwire MM, Bayer F, Webster CL, Cao C, Jiggins FM.
+    \newblock {{S}uccessive increases in the resistance of {D}rosophila to viral
+      infection through a transposon insertion followed by a {D}uplication}.
+    \newblock PLoS Genet. 2011 Oct;7(10):e1002337.
+
+  \end{thebibliography}
+\end{document}
