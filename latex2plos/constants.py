@@ -1,0 +1,2 @@
+DEFAULT_BUILD_DIR = 'build'
+DEFAULT_EXPORT_DIR = 'export'
