@@ -3,3 +3,4 @@ syntax: glob
 dist/
 build/
 *.egg-info/
+.vscode/
