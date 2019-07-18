@@ -1,0 +1,10 @@
+\section*{\code{latex2plos} tests}
+
+This section is not a part of the original PLOS \LaTeX~template.
+It has been added to demonstrate the commonly used \LaTeX~features that are not present in the PLOS template, and verify that \code{latex2plos} is able to handle them properly.
+
+\subsection*{\code{verbatiminput}}
+
+\code{latex2plos.transformers.VerbatimInputTransformer} will transform a \verb|\verbatiminput| file inclusion into its equivalent \verb|\begin{verbatim}...\end{verbatim}| call, as in the example below:
+
+\verbatiminput{../setup.py}

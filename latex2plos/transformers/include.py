@@ -40,3 +40,9 @@ class IncludeTransformer(BaseFileIncludeTransformer):
 class InputTransformer(BaseFileIncludeTransformer):
     marker = 'input'
     append_extension_to_file = '.tex'
+
+
+class VerbatimInputTransformer(BaseFileIncludeTransformer):
+    marker = 'verbatiminput'
+    header = '\\begin{verbatim}\n'
+    footer = '\\end{verbatim}\n'
