@@ -14,3 +14,11 @@ It has been added to demonstrate the commonly used \LaTeX~features that are not 
 \code{latex2plos.transformers.BibliographyTransformer} will transform a \verb|\bibliography| file inclusion into its equivalent \verb|\begin{thebibliography}...\end{thebibliography}| call, as demonstrated by this example paper (\code{paper.tex}) and its BiBTeX database (\code{references.bib}).
 
 This is done as PLOS does not allow submission of BiBTeX databases, and instead requires the reference information to be embedded in the paper directly \cite{PLOS:LaTeX}.
+
+\subsection*{\code{lstinputlisting}}
+
+\code{latex2plos.transformers.InputListingTransformer} will copy over the files referenced by \verb|\lstinputlisting| into the papers export directory, as in the examples below:
+
+\lstinputlisting[language=Python,caption={\code{friendly\_name\_mixin} project source code \cite{Project:friendly_name_mixin:CodeRepository}}]{listings/friendly_name_mixin.py}
+
+\lstinputlisting[language=Python,caption={\code{friendly\_name\_mixin} project unit tests \cite{Project:friendly_name_mixin:CodeRepository}}]{listings/tests.py}

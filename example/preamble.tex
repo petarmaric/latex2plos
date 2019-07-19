@@ -99,6 +99,20 @@
 % Packages included by the papers authors
 \usepackage{verbatim}
 
+\usepackage{listings}
+\IfFileExists{zi4.sty}{\usepackage{zi4}}{\usepackage{inconsolata}} % 'Inconsolata' is my monospace font of choice
+\lstset{
+  columns=flexible,
+  keepspaces=true,
+  basicstyle=\ttfamily,
+  extendedchars=true,
+  showspaces=false,
+  showtabs=false,
+  showstringspaces=false,
+  frame=single,
+  captionpos=b,
+}
+
 % ligatures disabled
 \usepackage{microtype}
 \DisableLigatures[f]{encoding = *, family = * }
