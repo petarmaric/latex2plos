@@ -8,3 +8,9 @@ It has been added to demonstrate the commonly used \LaTeX~features that are not 
 \code{latex2plos.transformers.VerbatimInputTransformer} will transform a \verb|\verbatiminput| file inclusion into its equivalent \verb|\begin{verbatim}...\end{verbatim}| call, as in the example below:
 
 \verbatiminput{../setup.py}
+
+\subsection*{\code{bibliography}}
+
+\code{latex2plos.transformers.BibliographyTransformer} will transform a \verb|\bibliography| file inclusion into its equivalent \verb|\begin{thebibliography}...\end{thebibliography}| call, as demonstrated by this example paper (\code{paper.tex}) and its BiBTeX database (\code{references.bib}).
+
+This is done as PLOS does not allow submission of BiBTeX databases, and instead requires the reference information to be embedded in the paper directly \cite{PLOS:LaTeX}.

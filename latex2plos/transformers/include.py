@@ -1,5 +1,6 @@
 import os
 
+from ..utils import find_filenames
 from .base import BaseTransformer
 
 
@@ -46,3 +47,10 @@ class VerbatimInputTransformer(BaseFileIncludeTransformer):
     marker = 'verbatiminput'
     header = '\\begin{verbatim}\n'
     footer = '\\end{verbatim}\n'
+
+
+class BibliographyTransformer(BaseFileIncludeTransformer):
+    marker = 'bibliography'
+
+    def filenames(self, parser, line):
+        return find_filenames(parser.build_dir, '*.bbl')
