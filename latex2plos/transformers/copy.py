@@ -2,6 +2,8 @@ import logging
 import os
 import shutil
 
+from wand.image import Image
+
 from .base import BaseTransformer
 
 
@@ -51,3 +53,23 @@ class BaseFileCopyTransformer(BaseTransformer):
 class InputListingTransformer(BaseFileCopyTransformer):
     marker = 'lstinputlisting'
     filename_prefix = 'lst'
+
+
+class IncludeGraphicsTransformer(BaseFileCopyTransformer):
+    marker = 'includegraphics'
+    filename_prefix = 'fig'
+
+    # Transform the figures, as per https://journals.plos.org/plosone/s/figures
+    comment_out_the_line = True # "Do not include figures in the manuscript PDF"
+    image_format = 'tiff' # "TIFF or EPS only"
+    image_resolution = 300 # "Submit figures ... with a resolution no greater than 300-600 dpi"
+    image_compression = 'lzw' # "LZW compression is required"
+
+    def transform_to_filename(self, filename):
+        return "%s.%s" % (os.path.splitext(filename)[0], self.image_format)
+
+    def transform_file(self, from_filename, to_filename):
+        with Image(filename=from_filename, resolution=self.image_resolution) as img:
+            img.format = self.image_format
+            img.compression = self.image_compression
+            img.save(filename=to_filename)

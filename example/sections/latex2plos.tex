@@ -22,3 +22,36 @@ This is done as PLOS does not allow submission of BiBTeX databases, and instead 
 \lstinputlisting[language=Python,caption={\code{friendly\_name\_mixin} project source code \cite{Project:friendly_name_mixin:CodeRepository}}]{listings/friendly_name_mixin.py}
 
 \lstinputlisting[language=Python,caption={\code{friendly\_name\_mixin} project unit tests \cite{Project:friendly_name_mixin:CodeRepository}}]{listings/tests.py}
+
+\subsection*{\code{includegraphics}}
+
+\code{latex2plos.transformers.IncludeGraphicsTransformer} will copy over the figures referenced by \verb|\includegraphics| into the papers export directory, as shown in \cref{fig:petar-avatar,fig:3-clamped-free-beam-decimal-precision-errors,fig:barbero-viscoelastic-natural-frequencies,fig:barbero-viscoelastic-damage-analysis}.
+It will also transform all figures into the TIFF image format (LZW compression, at 300 dpi) and remove/comment-out them from the papers exported PDF, as per PLOS requirements \cite{PLOS:LaTeX, PLOS:Figures}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=6cm]{figures/petar-gravatar.png}
+    \caption{Petar Marić gravatar (PNG image format) \cite{Maric:Gravatar}}
+    \label{fig:petar-avatar}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{figures/decimal-precision-error@3-clamped-free-beam.eps}
+    \caption{Maximum root-finding errors (across all 100 modes) of clamped-free beam's (LJ=3) characteristic function (EPS image format) \cite{Maric:2017}}
+    \label{fig:3-clamped-free-beam-decimal-precision-errors}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{figures/barbero-viscoelastic@local-p1.jpg}
+    \caption{Viscoelastic natural frequencies (JPEG image format) \cite{Milasinovic:2018}}
+    \label{fig:barbero-viscoelastic-natural-frequencies}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{figures/barbero-viscoelastic@fsm-damage-analysis.pdf}
+    \caption{\code{fsm\_damage\_analysis} project example experiment report (PDF image format) \cite{Project:fsm_damage_analysis:CodeRepository}}
+    \label{fig:barbero-viscoelastic-damage-analysis}
+\end{figure}
