@@ -8,7 +8,9 @@ from .main import latex2plos
 
 def main():
     # Setup command line option parser
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description='Automated preparation of your LaTeX paper for submission in PLOS journals',
+    )
     parser.add_argument(
         'input_filename',
         help='Filename of the main LaTeX document',
