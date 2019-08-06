@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='latex2plos',
-    version='1.0.0',
+    version='1.0.1',
     url='https://bitbucket.org/petar/latex2plos',
     license='BSD',
     author='Petar Maric',

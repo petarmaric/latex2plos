@@ -1,0 +1,15 @@
+latex2plos 1.0.1 (August 6, 2019)
+=================================
+
+Refactoring
+-----------
+
+    * The example paper has been moved into its own repository
+      https://bitbucket.org/petar/template4plos
+
+    * Asked users to cite this project in their papers.
+
+latex2plos 1.0.0 (July 20, 2019)
+================================
+
+    * Initial release.
