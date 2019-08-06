@@ -49,16 +49,11 @@ exported PDF, as per PLOS `LaTeX guidelines`_ and `figures guidelines`_.
 Examples
 ========
 
-An example paper, based on the PLOS LaTeX template, has been provided in the
-``example`` directory to verify the latex2plos features listed above. To try it
-out yourself, just clone the projects repository and run::
+An example paper, based on the `PLOS LaTeX template`_, has been provided in the
+`template4plos repository`_ to verify the latex2plos features listed above.
 
-    $ pip install -e .[dev]
-    $ cd example
-    $ make clean export
-
-Afterwards you can compare the contents of the ``example`` and
-``example/export`` directories.
+.. _`PLOS LaTeX template`: https://journals.plos.org/plosone/s/latex
+.. _`template4plos repository`: http://bitbucket.org/petar/template4plos
 
 Installation
 ============
@@ -85,9 +80,6 @@ Quick start::
 
     >>> import logging
     >>> logging.basicConfig(level=logging.DEBUG, format="[%(levelname)s] %(message)s")
-
-    >>> import os
-    >>> os.chdir('example')
 
     >>> from latex2plos.main import latex2plos
     >>> latex2plos('paper.tex')
