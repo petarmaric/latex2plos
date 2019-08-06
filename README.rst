@@ -4,6 +4,15 @@ About
 Console app and Python API for automated preparation of your LaTeX paper for
 submission in PLOS journals.
 
+Please cite this project in your papers::
+
+    @misc{latex2plos,
+      title={{latex2plos public code repository}},
+      author={Mari{\'c}, Petar},
+      year={2019},
+      url={https://bitbucket.org/petar/latex2plos/},
+    }
+
 Major features
 ==============
 
