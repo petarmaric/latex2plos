@@ -10,7 +10,7 @@ Please cite this project in your papers::
       title={{latex2plos public code repository}},
       author={Mari{\'c}, Petar},
       year={2019},
-      url={https://bitbucket.org/petar/latex2plos/},
+      url={https://github.com/petarmaric/latex2plos},
     }
 
 Major features
@@ -62,7 +62,7 @@ An example paper, based on the `PLOS LaTeX template`_, has been provided in the
 `template4plos repository`_ to verify the latex2plos features listed above.
 
 .. _`PLOS LaTeX template`: https://journals.plos.org/plosone/s/latex
-.. _`template4plos repository`: http://bitbucket.org/petar/template4plos
+.. _`template4plos repository`: https://github.com/petarmaric/template4plos
 
 Installation
 ============
@@ -101,6 +101,6 @@ If you find any bugs, or wish to propose new features `please let us know`_.
 If you'd like to contribute, simply fork `the repository`_, commit your changes
 and send a pull request. Make sure you add yourself to `AUTHORS`_.
 
-.. _`please let us know`: https://bitbucket.org/petar/latex2plos/issues/new
-.. _`the repository`: http://bitbucket.org/petar/latex2plos
-.. _`AUTHORS`: https://bitbucket.org/petar/latex2plos/src/default/AUTHORS
+.. _`please let us know`: https://github.com/petarmaric/latex2plos/issues/new
+.. _`the repository`: https://github.com/petarmaric/latex2plos
+.. _`AUTHORS`: https://github.com/petarmaric/latex2plos/blob/master/AUTHORS
