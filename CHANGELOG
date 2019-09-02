@@ -1,3 +1,11 @@
+latex2plos 1.0.2 (September 2, 2019)
+====================================
+
+Bugfixes
+--------
+
+    * Migrated from Bitbucket (Mercurial) to GitHub (Git).
+
 latex2plos 1.0.1 (August 6, 2019)
 =================================
 
